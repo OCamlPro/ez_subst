@@ -1,0 +1,8 @@
+
+{1 Library ez_subst}
+
+This is the description
+of the ez_subst OCaml project
+
+
+The entry point of this library is the module: {!Ez_subst}.

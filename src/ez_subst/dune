@@ -1,0 +1,10 @@
+(library
+ (name ez_subst)
+ (public_name ez_subst)
+ (libraries )
+ 
+)
+
+(documentation
+  (package ez_subst))
+

@@ -1,0 +1,56 @@
+[project]
+drom-version = "0.1.0"
+
+[project]
+authors = ["Fabrice LE FESSANT <fabrice.le_fessan@ocamlpro.com>"]
+copyright = "OCamlPro & Origin Labs"
+edition = "4.10.0"
+github-organization = "ocamlpro"
+license = "LGPL2"
+min-edition = "4.10.0"
+mode = "binary"
+name = "ez_subst"
+synopsis = "The ez_subst project"
+version = "0.1.0"
+windows-ci = true
+
+# keys that you could also define:
+# sphinx-target = "...sphinx-target..."
+# archive = "...archive..."
+# dev-repo = "...dev-repo..."
+# bug-reports = "...bug-reports..."
+# doc-api = "...doc-api..."
+# doc-gen = "...doc-gen..."
+# homepage = "...homepage..."
+
+[project]
+description = """
+This is the description
+of the ez_subst OCaml project
+"""
+
+[drom]
+skip = "src/ez_subst/main.ml"
+
+[dependencies]
+
+[tools.ocamlformat]
+for-test = true
+[tools.odoc]
+for-doc = true
+[tools.ppx_expect]
+for-test = true
+[tools.ppx_inline_test]
+for-test = true
+
+[project]
+pack-modules = true
+skip-dirs = []
+
+
+[[package]]
+dir = "src/ez_subst"
+gen-version = "version.ml"
+kind = "library"
+name = "ez_subst"
+
