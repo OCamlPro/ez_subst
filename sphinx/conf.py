@@ -53,7 +53,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'ez_subst'
 copyright = 'OCamlPro & Origin Labs'
-author = 'Fabrice LE FESSANT <fabrice.le_fessan@ocamlpro.com>'
+author = 'Fabrice LE FESSANT <fabrice.le_fessant@origin-labs.com>'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -41,4 +41,3 @@ targets:
 * :code:`doc`: build documentation with :code:`odoc`
 * :code:`fmt`: format the code using :code:`ocamlformat`
 * :code:`test`: run tests
-

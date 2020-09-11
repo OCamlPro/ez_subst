@@ -9,4 +9,4 @@ of the ez_subst OCaml project
 Authors
 -------
 
-* Fabrice LE FESSANT <fabrice.le_fessan@ocamlpro.com>
+* Fabrice LE FESSANT <fabrice.le_fessant@origin-labs.com>
