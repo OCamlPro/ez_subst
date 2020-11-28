@@ -11,7 +11,7 @@
  (synopsis "Ez_subst is a simple module to perform string substitutions")
  (description "Ez_subst is a simple module to perform string substitutions, like\n${brace}, $(paren), $[bracket] or $alpha. It provides many options\nto configure the substitutions.\n")
  (depends
-   (ocaml (>= 4.10.0))
+   (ocaml (>= 4.07.0))
    ppx_inline_test
    ppx_expect
    odoc

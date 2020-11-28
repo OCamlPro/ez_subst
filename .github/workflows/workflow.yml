@@ -17,11 +17,16 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
-#          - windows-latest
+          - windows-latest
         ocaml-version:
           - 4.10.0
         skip_test:
           - false
+
+        include:
+          - os: ubuntu-latest
+            ocaml-version: 4.07.0
+            skip_test: true
 
 
     runs-on: ${{ matrix.os }}
