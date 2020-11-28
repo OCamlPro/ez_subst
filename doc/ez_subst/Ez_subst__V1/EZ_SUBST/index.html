@@ -7,7 +7,7 @@
 
       let s = EZ_SUBST.string ~sep:'!'
         ~paren:(fun () s -&gt; String.uppercase s)
-        ~ctxt:() &quot;$(abc) $(def)&quot;
+        ~ctxt:() &quot;!(abc) !(def)&quot;
 
       let s = EZ_SUBST.string ~sym:true ~sep:'%'
       ~brace:(fun ctxt_ s -&gt; ctxt ^ &quot; &quot; ^ s)
