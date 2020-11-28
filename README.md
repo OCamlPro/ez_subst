@@ -4,8 +4,9 @@
 
 # ez_subst
 
-This is the description
-of the ez_subst OCaml project
+Ez_subst is a simple module to perform string substitutions, like
+${brace}, $(paren), $[bracket] or $alpha. It provides many options
+to configure the substitutions.
 
 
 * Website: https://ocamlpro.github.io/ez_subst

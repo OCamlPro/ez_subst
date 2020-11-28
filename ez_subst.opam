@@ -4,10 +4,11 @@ opam-version: "2.0"
 name: "ez_subst"
 version: "0.1.0"
 license: "LGPL-2.1-only with OCaml-LGPL-linking-exception"
-synopsis: "The ez_subst project"
+synopsis: "Ez_subst is a simple module to perform string substitutions"
 description: """\
-This is the description
-of the ez_subst OCaml project
+Ez_subst is a simple module to perform string substitutions, like
+${brace}, $(paren), $[bracket] or $alpha. It provides many options
+to configure the substitutions.
 """
 authors: ["Fabrice LE FESSANT <fabrice.le_fessant@origin-labs.com>"]
 maintainer: ["Fabrice LE FESSANT <fabrice.le_fessant@origin-labs.com>"]
