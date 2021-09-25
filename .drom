@@ -2,17 +2,17 @@
 
 # hash of toml configuration files
 # used for generation of all files
-31f0c3654d936c8cc161684399ba4d15:.
+d21f13f562af0e7c11cc064b7481d5de:.
 # end context for .
 
 # begin context for .github/workflows/doc-deploy.yml
 # file .github/workflows/doc-deploy.yml
-7bfd361c5b4796980b6f42f708a97986:.github/workflows/doc-deploy.yml
+bc5f6d6c804f7ec2579f8695aa71c458:.github/workflows/doc-deploy.yml
 # end context for .github/workflows/doc-deploy.yml
 
 # begin context for .github/workflows/workflow.yml
 # file .github/workflows/workflow.yml
-1358ce8b42d6e3ec6999ebe3d5bc2ab2:.github/workflows/workflow.yml
+d9a85f75053101bde9f1daeed586d692:.github/workflows/workflow.yml
 # end context for .github/workflows/workflow.yml
 
 # begin context for .gitignore
@@ -27,7 +27,7 @@ be2d226b0dc658a425e86af1847a2316:.ocamlformat
 
 # begin context for .ocamlformat-ignore
 # file .ocamlformat-ignore
-5574462426a3706b11f5cbdbb0d4ad91:.ocamlformat-ignore
+a8d1bcd6f62c6b813b77d3ff8959d8d2:.ocamlformat-ignore
 # end context for .ocamlformat-ignore
 
 # begin context for .ocp-indent
@@ -37,22 +37,22 @@ be2d226b0dc658a425e86af1847a2316:.ocamlformat
 
 # begin context for CHANGES.md
 # file CHANGES.md
-da593a4b5e79fdc2598b0e55c922bcd9:CHANGES.md
+f830fda49397e6ebd70da7c6dd2d0746:CHANGES.md
 # end context for CHANGES.md
 
 # begin context for LICENSE.md
 # file LICENSE.md
-be0301341356292d7f2151ae7bd7f23f:LICENSE.md
+05a9a8823c5bef31fc8eeea0bc918ec9:LICENSE.md
 # end context for LICENSE.md
 
 # begin context for Makefile
 # file Makefile
-1624511ec72220afd5a54555dd88b04d:Makefile
+990732d099b6a37db3c5b1a0bc232438:Makefile
 # end context for Makefile
 
 # begin context for README.md
 # file README.md
-e7b55948b3da13312d7260cf69bcdfeb:README.md
+7ea63631e5c546392cf754271fd7c510:README.md
 # end context for README.md
 
 # begin context for docs/.nojekyll
@@ -77,7 +77,7 @@ ddfe198077dea5d913146bffd4f74d56:docs/doc/index.html
 
 # begin context for docs/index.html
 # file docs/index.html
-e59a90ba4621cdabf4df972bf1495ef9:docs/index.html
+999583f05aed3f3dfe1e256eb7d6f675:docs/index.html
 # end context for docs/index.html
 
 # begin context for docs/sphinx/index.html
@@ -87,7 +87,7 @@ e59a90ba4621cdabf4df972bf1495ef9:docs/index.html
 
 # begin context for docs/style.css
 # file docs/style.css
-0085152add896d7bab7b1a744d2a9af7:docs/style.css
+c8281f46ba9a11d0b61bc8ef67eaa357:docs/style.css
 # end context for docs/style.css
 
 # begin context for drom.toml
@@ -102,13 +102,28 @@ df544cfaf9078d1bba2f90ed1b5adf5f:dune
 
 # begin context for dune-project
 # file dune-project
-e158970f9c2a2dd7675ddec9b1cdef9d:dune-project
+7ba014e69fce526607c3f8c74351b17b:dune-project
 # end context for dune-project
 
 # begin context for ez_subst.opam
 # file ez_subst.opam
-258d69743606190248809e34f3c70702:ez_subst.opam
+1e094aaab8e0714d08f8c003e96a5684:ez_subst.opam
 # end context for ez_subst.opam
+
+# begin context for scripts/after.sh
+# file scripts/after.sh
+1112fbe7067fce342365a25613b5659d:scripts/after.sh
+# end context for scripts/after.sh
+
+# begin context for scripts/before.sh
+# file scripts/before.sh
+ae050b3099ac0b43d7c7f4295f6b2319:scripts/before.sh
+# end context for scripts/before.sh
+
+# begin context for scripts/copy-bin.sh
+# file scripts/copy-bin.sh
+bb3a9d286f0dc64021db4194427263ee:scripts/copy-bin.sh
+# end context for scripts/copy-bin.sh
 
 # begin context for sphinx/_static/css/fixes.css
 # file sphinx/_static/css/fixes.css
@@ -117,37 +132,37 @@ e158970f9c2a2dd7675ddec9b1cdef9d:dune-project
 
 # begin context for sphinx/about.rst
 # file sphinx/about.rst
-d8595f6a528f0fd43a703eaf521328e6:sphinx/about.rst
+5d7558be1484ab8f922feffbd85bbfc8:sphinx/about.rst
 # end context for sphinx/about.rst
 
 # begin context for sphinx/conf.py
 # file sphinx/conf.py
-edd7d4e8e30dc9f7795c93db9fdf83c3:sphinx/conf.py
+d7ec8434b7364e37fee4744c72fb3322:sphinx/conf.py
 # end context for sphinx/conf.py
 
 # begin context for sphinx/index.rst
 # file sphinx/index.rst
-cf3c41f0ffb808c3006acbb1bf13df66:sphinx/index.rst
+53f81d4fde04f52dbe4c528f764a7149:sphinx/index.rst
 # end context for sphinx/index.rst
 
 # begin context for sphinx/install.rst
 # file sphinx/install.rst
-a5c6c62679d055279f35b5fd458ef807:sphinx/install.rst
+f68d318901f4e5d5cdf7537d0775f24c:sphinx/install.rst
 # end context for sphinx/install.rst
 
 # begin context for sphinx/license.rst
 # file sphinx/license.rst
-edb58639a5f42798015f0fc9c34d0a34:sphinx/license.rst
+be5b2f331733cbbbfed0aba411d34691:sphinx/license.rst
 # end context for sphinx/license.rst
 
 # begin context for src/ez_subst/dune
 # file src/ez_subst/dune
-41469dde66ad94686bc39cf1b7cf4e98:src/ez_subst/dune
+7d8786e3a3dafff116a2e1c8a3010304:src/ez_subst/dune
 # end context for src/ez_subst/dune
 
 # begin context for src/ez_subst/index.mld
 # file src/ez_subst/index.mld
-a9fe58e3209451cb9f1b9bd44d675e25:src/ez_subst/index.mld
+14e49d45c718ac60a89f51af22bccb62:src/ez_subst/index.mld
 # end context for src/ez_subst/index.mld
 
 # begin context for src/ez_subst/package.toml
