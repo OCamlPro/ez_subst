@@ -1,5 +1,5 @@
 
-[![Actions Status](https://github.com/ocamlpro/ez_subst/workflows/Main%20Workflow/badge.svg)](https://github.com/ocamlpro/ez_subst/actions)
+[![Actions Status](https://github.com/ocamlpro/ez_subst/workflows/Main%20Workflow/badge.svg)](https://github.com/ocamlpro/ez_subst/actions)[![Actions Status](https://github.com/ocamlpro/ez_subst/workflows/doc-deploy/badge.svg)](https://github.com/ocamlpro/ez_subst/actions)
 [![Release](https://img.shields.io/github/release/ocamlpro/ez_subst.svg)](https://github.com/ocamlpro/ez_subst/releases)
 
 # ez_subst
