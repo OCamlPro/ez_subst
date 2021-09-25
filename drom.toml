@@ -11,7 +11,7 @@ min-edition = "4.07.0"
 mode = "binary"
 name = "ez_subst"
 synopsis = "Ez_subst is a simple module to perform string substitutions"
-version = "0.1.0"
+version = "0.2.0"
 windows-ci = true
 
 # keys that you could also define:
