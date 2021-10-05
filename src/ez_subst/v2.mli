@@ -44,7 +44,7 @@ module EZ_SUBST : sig
 
       Examples:
 
-{v open Ez_subst.V1 (* versionned interface *)
+{v    open Ez_subst.V2 (* versionned interface *)
 
       let s = EZ_SUBST.string ~brace:(fun ctxt n -> string_of_int
      (ctxt + int_of_string n)) ~ctxt:3 "${4} ${5}"
@@ -56,7 +56,8 @@ module EZ_SUBST : sig
      -> ctxt ^ " " ^ s) ~ctxt:"Hello" "%{John}% %{Sandy}%"
 
       let s = EZ_SUBST.string_from_list ~default:"unknown" [ "name",
-     "Doe"; "surname", "John" ] "${name} $(surname) is missing" v} *)
+     "Doe"; "surname", "John" ] "${name} $(surname) is missing" v}
+ *)
 
   (** The type for functions performing the translation from [ident]
      to its replacement. ['context] is some information, that is from
@@ -68,9 +69,50 @@ module EZ_SUBST : sig
       is specified. *)
   exception UnclosedExpression of string
 
-  (** [string f context s] performs substitutions on [s] following
-     [f], passing the context [context] to [f] for every expression,
-     returning the result as a string. *)
+  (** [string LABELLED_ARGUMENTS ~s] performs substitutions on [s],
+     returning the result as a string.  Labelled arguments have the
+     following meanings:
+
+       - [~sep:char] : use CHAR as the separator beginning
+     substitutions (default is ['$'])
+
+       - [~sym:bool] : whether substitutions notations are symmetric
+     [${...}$] or not [${...}] (default is false)
+
+       - [~fail:bool] : whether an exception should be raised or not
+     in case of failure (default is true)
+
+       - [~escape:bool ref] : whether escaping using ['\\'] is allowed
+     . The use of a [ref] allows the developer to change it during
+     substitutions (default is true)
+
+       - [~skipper:bool list ref] : a list of boolean. If the top of
+     the stack is true, the text and substitutions results are not
+     returned, but skipped. It can be use to encode (recursive) 'if'
+     substitutions.
+
+       - [~brace: 'context -> string -> string]: the substitution
+     performed when '${...}' is found. The string argument is the
+     content within the braces. (default is nothing to do)
+
+       - [~bracket: 'context -> string -> string]: the substitution
+     performed when '$[...]' is found. The string argument is the
+     content within the brackets. (default is nothing to do)
+
+       - [~paren: 'context -> string -> string]: the substitution
+     performed when '$(...)' is found. The string argument is the
+     content within the parens. (default is nothing to do)
+
+       - [~var: 'context -> string -> string]: the substitution
+     performed when '$var' is found. The string argument is the name
+     of the variable. A variable is defined as a sequence of 'a'..'z',
+     'A'..'Z', '0'..'9', '_' always starting with a letter. (default
+     is nothing to do)
+
+       - [~ctxt: 'context]: a contest passed to all substitution
+     functions a first argument (mandatory argument).
+
+ *)
   val string :
     ?sep:char ->
     ?sym:bool ->
@@ -85,9 +127,9 @@ module EZ_SUBST : sig
     string ->
     string
 
-  (** [buffer f b context s] performs substitutions on [s] following
-     [f], passing the context [context] to [f] for every expression,
-     returning the result by appending it to the buffer [b].
+  (** [buffer LABELLED_ARGS b s] performs substitutions on [s], saving the
+      result in the buffer [b]. See [string] documentation for an
+      explanation of labelled arguments.
 
       Note that modifications are not atomic, so if an exception is raised
       during the substitution, the buffer might have been modified.
