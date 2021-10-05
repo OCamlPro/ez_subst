@@ -4,7 +4,6 @@ Ez_subst is a simple module to perform string substitutions, like
 ${brace}, $(paren), $[bracket] or $alpha. It provides many options
 to configure the substitutions.
 
-
-
-The entry point of this library is the module: {!Ez_subst}.
+The entry point of this library is the module: {!Ez_subst}, or
+even better its most up to date version {!Ez_subst.V2.EZ_SUBST}.
 
