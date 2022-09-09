@@ -54,7 +54,7 @@ jobs:
 
       - run: opam pin add . -y --no-action
 
-      - run: opam depext -y ez_subst
+      - run: opam depext -y ez_subst ez-subst
 #        if: steps.cache-opam.outputs.cache-hit != 'true'
 
       - run: opam install -y opam/*.opam --deps-only --with-test

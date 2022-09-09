@@ -1,0 +1,8 @@
+[config]
+
+sep = "$"
+escape = true
+
+[brace.subst]
+x = "Hello"
+y = "World"

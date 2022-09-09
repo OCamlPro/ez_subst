@@ -15,7 +15,7 @@ all: build
 build:
 	./scripts/before.sh build
 	opam exec -- dune build @install
-	./scripts/copy-bin.sh ez_subst
+	./scripts/copy-bin.sh ez_subst ez-subst
 	./scripts/after.sh build
 
 build-deps:

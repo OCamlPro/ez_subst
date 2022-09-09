@@ -1,0 +1,7 @@
+[template]
+
+src = "input.txt"
+dst = "t1.output"
+config = "c0.toml"
+
+

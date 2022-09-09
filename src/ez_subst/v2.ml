@@ -15,6 +15,8 @@ module EZ_SUBST = struct
 
   type 'context t = 'context -> string -> string
 
+  (* This exception is raised in [sym=true] mode, only if [fail=true]
+     (default) *)
   exception UnclosedExpression of string
 
   let escape = ref true
@@ -23,9 +25,23 @@ module EZ_SUBST = struct
     | [] -> false
     | p :: _ -> not p
 
+  (*
+  let eprint kind o =
+    Printf.eprintf "Has subst %S: %b\n%!" kind
+      ( match o with | None -> false | Some _ -> true )
+*)
+
   let buffer ?(sep = '$') ?(sym = false) ?(fail=true)
       ?(escape = escape) ?skipper ?brace ?paren ?bracket
       ?var ~ctxt b  s =
+
+    (*
+    eprint "var" var ;
+    eprint "paren" paren ;
+    eprint "brace" brace ;
+    eprint "bracket" bracket ;
+*)
+
     let len = String.length s in
 
     let rec iter b skip stack i =
@@ -148,7 +164,8 @@ module EZ_SUBST = struct
     Buffer.contents b
 
 
-
+  (* This exception is only raised by [string_from_list] if a variable
+     neither appears in the list nor in the [default] argument *)
   exception UnknownExpression of string
 
   let string_from_list ?sep ?sym ?(fail=true)
