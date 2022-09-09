@@ -1,0 +1,8 @@
+[config]
+
+sep = "!"
+escape = true
+
+[var.substs]
+x = "Hello"
+y = "World"

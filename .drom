@@ -1,11 +1,11 @@
 # Keep this file in your GIT repo to help drom track generated files
 # begin version
-version:0.6.0~dev
+version:0.6.1
 # end version
 
 # hash of toml configuration files
 # used for generation of all files
-265d7a383f2155d6c80d2806e05dc787:.
+cfe21c57414ea98ada33ad629461224f:.
 # end context for .
 
 # begin context for .github/workflows/doc-deploy.yml
@@ -15,12 +15,12 @@ bc5f6d6c804f7ec2579f8695aa71c458:.github/workflows/doc-deploy.yml
 
 # begin context for .github/workflows/workflow.yml
 # file .github/workflows/workflow.yml
-76c97c57628e01bf6aad2edf5f927d5c:.github/workflows/workflow.yml
+450a67b217546e4541acd18442cf94b9:.github/workflows/workflow.yml
 # end context for .github/workflows/workflow.yml
 
 # begin context for .gitignore
 # file .gitignore
-4fbab3b9cc53d400585f1f8b93288bfe:.gitignore
+3ad556849b79466e92f402c9c9a1d867:.gitignore
 # end context for .gitignore
 
 # begin context for .ocamlformat
@@ -40,7 +40,7 @@ a8d1bcd6f62c6b813b77d3ff8959d8d2:.ocamlformat-ignore
 
 # begin context for CHANGES.md
 # file CHANGES.md
-a50b9f61b9394a7d145a4d35c7e808c3:CHANGES.md
+d12503dc621412756adbd7eae7e27d82:CHANGES.md
 # end context for CHANGES.md
 
 # begin context for LICENSE.md
@@ -50,7 +50,7 @@ c9e18cbe26f781d177b5511ad24c811e:LICENSE.md
 
 # begin context for Makefile
 # file Makefile
-990732d099b6a37db3c5b1a0bc232438:Makefile
+bd6dffb59dc1a7de396be7a6be8d5074:Makefile
 # end context for Makefile
 
 # begin context for README.md
@@ -95,7 +95,7 @@ c8281f46ba9a11d0b61bc8ef67eaa357:docs/style.css
 
 # begin context for drom.toml
 # file drom.toml
-ae31c39a2832faa7a24fe228de2290fe:drom.toml
+666f7f19e7d75279751655a25585f35a:drom.toml
 # end context for drom.toml
 
 # begin context for dune
@@ -105,13 +105,23 @@ df544cfaf9078d1bba2f90ed1b5adf5f:dune
 
 # begin context for dune-project
 # file dune-project
-68b775ffc816d00965992f23120400aa:dune-project
+b2197dd4735aaecfd26ae57b89e5ba9c:dune-project
 # end context for dune-project
+
+# begin context for opam/ez-subst.opam
+# file opam/ez-subst.opam
+6abeb2a57d1a9ed79affa8bef7022cec:opam/ez-subst.opam
+# end context for opam/ez-subst.opam
 
 # begin context for opam/ez_subst.opam
 # file opam/ez_subst.opam
 7a08bb6609e1bf40b03a9b4a4ad6b894:opam/ez_subst.opam
 # end context for opam/ez_subst.opam
+
+# begin context for opam/ocp-subst.opam
+# file opam/ocp-subst.opam
+5e42276ddad4d378eeaa834841fecd66:opam/ocp-subst.opam
+# end context for opam/ocp-subst.opam
 
 # begin context for scripts/after.sh
 # file scripts/after.sh
@@ -172,6 +182,16 @@ c72b5162910d06f98f82db5ba3304f2a:sphinx/install.rst
 # file src/ez_subst/package.toml
 f31b2ecb6349d23a608af06b24578791:src/ez_subst/package.toml
 # end context for src/ez_subst/package.toml
+
+# begin context for src/ez_subst_program/dune
+# file src/ez_subst_program/dune
+575f435db058088789b83e5bf92f9f0d:src/ez_subst_program/dune
+# end context for src/ez_subst_program/dune
+
+# begin context for src/ez_subst_program/version.mlt
+# file src/ez_subst_program/version.mlt
+c00e8b11b101f7c751890d69c47282b9:src/ez_subst_program/version.mlt
+# end context for src/ez_subst_program/version.mlt
 
 # begin context for test/expect-tests/dune
 # file test/expect-tests/dune

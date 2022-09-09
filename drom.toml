@@ -71,3 +71,7 @@ share-dirs = ["share"]
 dir = "src/ez_subst"
 # edit 'src/ez_subst/package.toml' for package-specific options
 
+[[package]]
+dir = "src/ez_subst_program"
+# edit 'src/ocp-subst/package.toml' for package-specific options
+

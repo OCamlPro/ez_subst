@@ -1,0 +1,10 @@
+[template]
+
+src = "input.txt"
+dst = "t5.output"
+config = "c1.toml"
+
+[config]
+symetric = true
+
+

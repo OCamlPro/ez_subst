@@ -1,0 +1,10 @@
+[template]
+
+src = "input.txt"
+dst = "t0.output"
+config = "c0.toml"
+
+[config]
+sep = "$"
+
+
